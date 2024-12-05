@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Typing Speed Test</h1>
+    </header>
+    <main class="main">
+        <article class="intro">
+            <p>This is a mini project for typing speed. When you complete the text, the border becomes green and the timer will stop and you will see your speed. If you want to start over, click the button below. The border becomes yellow when you start typing and you're on the right track. If you write wrong letter, the border will become red.</p>
+        </article><!-- .intro -->
+        <section class="test-area">
+            <div class="pattern" >
+                متن الگو :
+            </div>
+            <div id="origin-text">
+                <p>The text for test. Complete this text to see your typing speed.</p>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6" placeholder="Starts with typing the first letter"></textarea>
+            </div><!-- .test-wrapper -->
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <button id="reset">Start Over</button>
+            </div><!-- .meta -->
+        </section><!-- .test-area -->
+    </main>
+
+</body>
+
+</html>
