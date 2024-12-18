@@ -6,6 +6,6 @@ When you complete the text, the border becomes **green** and the timer will stop
 
 ***
 ## Demo
-You can click on [This](https://mohammadmehdi-98.github.io/Typing-Speed/) to see the demo of typing speed project.
+You can click on [This](https://mohammadmehdi-98.github.io/typing-speed/) to see the demo of typing speed project.
 ***
 you can also go to HTML **line 26** and change the text to your desired text.
