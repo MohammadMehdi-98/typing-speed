@@ -44,7 +44,7 @@ function SpellCheck(){
 function start(){
     let TextEnteredLength=testArea.value.length;
 
-    if(TextEnteredLength==0 && !TimerRunning){
+    if(!TimerRunning){
         interval=setInterval(runTimer,10);
         TimerRunning=true;
     }
@@ -63,6 +63,6 @@ function ResetButton(){
 
 }
 
-testArea.addEventListener("keypress",start);
+testArea.addEventListener("input",start);
 testArea.addEventListener("keyup",SpellCheck);
 BTN.addEventListener("click",ResetButton);
