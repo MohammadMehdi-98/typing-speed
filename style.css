@@ -102,6 +102,25 @@ small {
 big {
 	font-size: 125%;
 }
+#origin-text {
+    user-select: none; /* Disable text selection */
+    -webkit-user-select: none; /* Disable text selection for Safari */
+    -moz-user-select: none; /* Disable text selection for Firefox */
+    -ms-user-select: none; /* Disable text selection for IE/Edge */
+}
+.header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
 
 /*--------------------------------------------------------------
 Layout
@@ -178,7 +197,6 @@ body {
     font-weight: bold;
 }
 .pattern{
-    direction: rtl;
     padding-top: 10px;
 
 }
@@ -198,4 +216,25 @@ body {
 #reset:hover {
     color: white;
     background-color: #430a69;
+}
+
+/*--------------------------------------------------------------
+Media Queries 
+--------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+    .masthead.header h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .masthead.header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .masthead.header h1 {
+        font-size: 2.5rem;
+    }
 }
